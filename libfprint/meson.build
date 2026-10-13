@@ -357,7 +357,7 @@ endif
 
 udev_hwdb_list_updater = custom_target('udev-hwdb-list-updater',
     output: udev_hwdb_list,
-    command: [ sync_unsupported_files, udev_hwdb_list_file ],
+    command: [ udev_hwdb_list_file ],
 )
 
 run_target('sync-udev-hwdb',

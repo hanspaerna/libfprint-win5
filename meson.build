@@ -103,7 +103,7 @@ mathlib_dep = cc.find_library('m', required: false)
 sh = find_program('sh', required: true)
 cairo_dep = dependency('cairo', required: false)
 
-sync_unsupported_files = files('scripts' / 'sync-unsupported-devices.py')
+# sync_unsupported_files = files('scripts' / 'sync-unsupported-devices.py')
 
 # introspection scanning and Gio-2.0.gir
 gobject_introspection = dependency('gobject-introspection-1.0', required: get_option('introspection'))
@@ -334,7 +334,7 @@ subdir('tests')
 
 subdir('examples')
 
-meson.add_dist_script(sync_unsupported_files, '--check', udev_hwdb_list_file)
+# meson.add_dist_script(sync_unsupported_files, '--check', udev_hwdb_list_file)
 
 pkgconfig = import('pkgconfig')
 pkgconfig.generate(
