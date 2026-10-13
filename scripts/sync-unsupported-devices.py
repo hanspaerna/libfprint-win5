@@ -10,7 +10,7 @@ import sys
 from urllib.request import urlopen
 
 DEFAULT_URL = (
-    "https://gitlab.freedesktop.org/libfprint/wiki/-/wikis/Unsupported-Devices.md"
+    "https://raw.githubusercontent.com/wiki/hanspaerna/libfprint-win5/Unsupported-Devices.md"
 )
 
 ID_RE = re.compile(r"\|.*([0-9a-fA-F]{4}):([0-9a-fA-F]{4}).*\|.*")
